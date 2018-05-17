@@ -1,0 +1,24 @@
+﻿<Window x:Class="HeadFirstDesignPatternWPF.MainWindow"
+        Title="MainWindow"
+
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d">
+    <Grid>
+        <Rectangle Width="3" Height="256"
+                   Stroke="Black" StrokeThickness="5" Fill="#FFBD3131" RenderTransformOrigin="0.5,1">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="30"/>
+                    <TranslateTransform X="-128.201" Y="-33.5474"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse Width="512" Height="512"
+                 Stroke="#FF2E2EC5" StrokeThickness="5" />
+    </Grid>
+</Window>
