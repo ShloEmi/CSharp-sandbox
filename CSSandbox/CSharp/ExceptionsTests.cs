@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace sandbox.CSharp
@@ -7,6 +8,40 @@ namespace sandbox.CSharp
     [TestFixture]
     public class ExceptionsTests
     {
+        [Test]
+        public async Task Test_Exception_Rethrows_true14()
+        {
+            try
+            {
+                await ThreadFunc();
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail($@"Test_Exception_Rethrows_true14, Due to exception, EX='{ex.Message}'" );
+            }
+
+            ;
+        }
+
+        private async Task ThreadFunc()
+        {
+            try
+            {
+                await qwe();
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail($@"ThreadFunc, Due to exception, EX='{ex.Message}'" );
+                throw;
+            }
+        }
+
+        private Task qwe()
+        {
+            throw new NotImplementedException();
+        }
+
+
         [Test]
         public void Test_Exception_Rethrows_true()
         {

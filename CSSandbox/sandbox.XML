@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sandbox</name>
+    </assembly>
+    <members>
+        <member name="T:sandbox.Frameworks.AutofacTests">
+            <summary>
+            Autofac Tests
+            </summary>
+        </member>
+        <member name="M:sandbox.Frameworks.AutofacTests.Resolve_ResolvingAnInterface_ExpectingMethodCalled_Test">
+            <summary>
+            Resolve - Resolving an interface and expecting method called.
+            </summary>
+        </member>
+    </members>
+</doc>
