@@ -65,5 +65,36 @@ namespace Net46Unity35Sandbox
 
             Assert.DoesNotThrow(() => parentContainer.Resolve<II2>());
         }
+        [Test]
+
+        public void Test_CreateChildContainer_ChildAddsInstance_ExpectingParentSeeThatInstanceAndCanNotUseIt()
+        {
+            var parentContainer = new UnityContainer();
+            var i1Mock = new Mock<II1>();
+            i1Mock.Setup(i1 => i1.f1(1)).Returns(42);
+            parentContainer.RegisterInstance(i1Mock.Object);
+
+            //parent
+            var i1Obj = parentContainer.Resolve<II1>();
+            Assert.Throws<ResolutionFailedException>(() => parentContainer.Resolve<II2>());
+            Assert.IsNotNull(i1Obj);
+            Assert.AreEqual(0, i1Obj.f1(0));
+            Assert.AreEqual(42, i1Obj.f1(1));
+
+            var i2Mock = new Mock<II2>();
+            i2Mock.Setup(i1 => i1.f2(1)).Returns(24);
+            //child
+            IUnityContainer childContainer = parentContainer.CreateChildContainer();
+            childContainer.RegisterInstance(i2Mock.Object/*, new HierarchicalLifetimeManager()*/);
+
+            i1Obj = childContainer.Resolve<II1>();
+            Assert.IsNotNull(childContainer.Resolve<II1>());
+            Assert.IsNotNull(childContainer.Resolve<II2>());
+            Assert.AreEqual(0, i1Obj.f1(0));
+            Assert.AreEqual(42, i1Obj.f1(1));
+
+            //parent
+            Assert.Throws<ResolutionFailedException>(() => parentContainer.Resolve<II2>());
+        }
     }
 }
