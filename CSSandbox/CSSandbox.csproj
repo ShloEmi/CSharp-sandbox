@@ -25,6 +25,7 @@
     <DocumentationFile>CSSandbox.XML</DocumentationFile>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <IntermediateOutputPath>C:\Users\CV\AppData\Local\Temp\vsBE1A.tmp\Debug\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,6 +37,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>sandbox.XML</DocumentationFile>
     <IntermediateOutputPath>C:\Users\CV\AppData\Local\Temp\vsBE1A.tmp\Release\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autofac">
@@ -74,6 +76,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="WinInternals\" />
     <Folder Include="WPF\HFDP\" />
   </ItemGroup>
   <ItemGroup>
