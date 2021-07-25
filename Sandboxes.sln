@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSSandbox", "CSSandbox\CSSandbox.csproj", "{B6A3CAC3-DAE7-41E6-855E-DAB5B806AAE3}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreConsoleApp", "CoreConsoleApp\CoreConsoleApp.csproj", "{3D73E86E-76A8-4441-8695-5312CC1AE52C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{87AA0E5B-F5C9-491B-83AE-91FC4FE66FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net46Unity35Sandbox", "Net46Unity35Sandbox\Net46Unity35Sandbox.csproj", "{77E668FD-BF09-45B2-B665-C1ED4381CC71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{87AA0E5B-F5C9-491B-83AE-91FC4FE66FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87AA0E5B-F5C9-491B-83AE-91FC4FE66FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87AA0E5B-F5C9-491B-83AE-91FC4FE66FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E668FD-BF09-45B2-B665-C1ED4381CC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E668FD-BF09-45B2-B665-C1ED4381CC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E668FD-BF09-45B2-B665-C1ED4381CC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E668FD-BF09-45B2-B665-C1ED4381CC71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
