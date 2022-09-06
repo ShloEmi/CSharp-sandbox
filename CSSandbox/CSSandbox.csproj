@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>sandbox</RootNamespace>
     <AssemblyName>sandbox</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
@@ -27,7 +27,7 @@
     <WarningLevel>0</WarningLevel>
     <DocumentationFile>CSSandbox.XML</DocumentationFile>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <IntermediateOutputPath>C:\Users\CV\AppData\Local\Temp\vsBE1A.tmp\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shlom\AppData\Local\Temp\vsEFB3.tmp\Debug\</IntermediateOutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -39,7 +39,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>sandbox.XML</DocumentationFile>
-    <IntermediateOutputPath>C:\Users\CV\AppData\Local\Temp\vsBE1A.tmp\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\shlom\AppData\Local\Temp\vsEFB3.tmp\Release\</IntermediateOutputPath>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -100,11 +100,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="WinInternals\" />
     <Folder Include="WPF\HFDP\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="WinInternals\" />
-    <Folder Include="WPF\HFDP\" />
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
